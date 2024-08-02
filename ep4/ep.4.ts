@@ -70,3 +70,44 @@ function shirt(size:string){
     }
 } 
 shirt('s')
+
+const x : number =2
+const y : number =5
+
+console.log(x+y)
+
+function fixedDecimal(n: number, digit: number){
+    const x = n.toFixed(digit)
+    return x
+}
+console.log(fixedDecimal(40.67676,20))
+
+function fixedDecimal(n: number){
+    return n.toLocaleString()
+}
+console.log(fixedDecimal(1000000))
+
+
+const str :string = "Hello"
+
+console.log(str.charAt(0))
+
+const str :string = "Hello"
+
+console.log(str.trimStart   ())
+
+const str :string = "Hello"
+
+console.log(str.trimEnd   ())
+
+const str :string = "Hello"
+
+console.log(str.trim())
+
+const str :string = "Sunisa"
+
+console.log(str.toUpperCase())
+
+const str :string = "Sunisa"
+
+console.log(str.toLowerCase())
