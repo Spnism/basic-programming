@@ -111,3 +111,42 @@ console.log(str.toUpperCase())
 const str :string = "Sunisa"
 
 console.log(str.toLowerCase())
+
+
+function checkStringLength(str: string){
+    
+    console.log(str.length)
+}
+checkStringLength("sunisa")
+
+
+function getChar (d : string, k : number){
+    return d.charAt(k)
+}
+console.log(getChar('ช่วยด้วย', 3))
+
+
+
+const str : string = 'อยากกลับบ้าน'
+
+console.log(str.indexOf('ก'))
+
+
+
+const str : string = 'ฉันรักเธอ'
+
+console.log(str.includes('รัก'))
+
+
+
+
+function falling (str : string,rts : string){
+    if (str.includes(rts)){
+        console.log(str.indexOf(rts))
+    } else {
+        console.log('ไม่พบคำที่ค้นหา')
+    }
+
+}
+falling('อยากกลับบ้าน','h')
+
