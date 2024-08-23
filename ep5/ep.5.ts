@@ -105,3 +105,47 @@
 // const str: string = 'Forth'
 
 // console.log(str.indexOf('X'))
+
+
+const cars: string[] = ['Toyota','Honda','Susuki','Yamaha','Masda']
+
+for (let i =0; i < cars.length; i++){
+    if (cars[i]=== 'Yamaha'){
+        console.log('รถซื้อแกงจะแรงได้ยังไง')
+    }
+}
+
+
+const bbf: string[] = ['Viwe','L','Pim','ink']
+
+for (let i =0; i < bbf.length; i++){
+    if (bbf[i]=== 'Pim'){
+        console.log('ไปกินหมูกระทะกัน')
+    }
+}
+
+
+
+ 
+const num: number[] = [1,2,3,4,5,6,7,8,9,10]
+
+for(let i=0; i <=10; i++){
+    if (num[i]=== 3 || num[i]=== 5 || num[i]=== 7){
+     console.log(0)    
+    }else{
+        console.log(num[i])  
+    }
+    
+}
+
+
+const num: number[] = [1,2,3,4,5,6,7,8,9,10]
+
+for(let i=0; i < num.length; i++){
+    if (num[i]=== 3 || num[i]=== 5 || num[i]=== 7){
+    num[i]=0
+          
+    }
+    
+}
+console.log(num)
