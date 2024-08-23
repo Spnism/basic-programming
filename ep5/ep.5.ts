@@ -47,3 +47,61 @@
 //     console.log('ฉันอายุ'+i+'ปี')
 //     i++
 // }
+
+// let car1: string = 'Toyota'
+// let car2: string = 'Honda'
+// let car3: string = 'Susuki'
+// let car4: string = 'Yamaha'
+// let car5: string = 'Masda'
+// const cars: string[] = ['Toyota','Honda','Susuki','Yamaha','Masda']
+// const num: number[] = [1,2,3,4,5]
+// const bool: boolean[] =[true,true,true,true,true,] 
+
+// const cars: string[] = ['Toyota','Honda','Susuki','Yamaha','Masda']
+
+// const str: string = 'ชอบก็จัด ประหยัดทำไม'
+
+// console.log(str.charAt(2))
+
+// // const cars: string[] = ['Toyota','Honda','Susuki','Yamaha','Masda']
+
+// const str: string = 'ชอบก็จัด ประหยัดทำไม'
+
+// console.log(str[2])
+
+// const cars: string[] = ['Toyota','Honda','Susuki','Yamaha','Masda']
+// cars[2]= 'Isuzu'
+// console.log(cars[2])
+
+// const cars: string[] = ['Toyota','Honda','Susuki','Yamaha','Masda']
+
+// console.log(cars[0])
+// console.log(cars[1])
+// console.log(cars[2])
+// console.log(cars[3])
+// console.log(cars[4])
+
+// const cars: string[] = ['Toyota','Honda','Susuki','Yamaha','Masda']
+
+// for (let i = 0; i < 5; i++){
+//     console.log(cars[i])
+// }
+
+// const cars: string[] = ['Toyota','Honda','Susuki','Yamaha','Masda']
+
+// for (let i = 0; i < cars.length; i++){
+//     console.log(cars[i])
+// }
+
+// const cars: string[] = ['Toyota','Honda','Susuki','Yamaha','Masda']
+
+// for (let i = 0; 1 < cars.length; i++){
+//     if (cars[i] === 'Yamaha') {
+//         console.log('รถซื้อแกงจะแรงได้ยังไง')
+//     }
+// }
+// console.log(cars.includes('toyota'))
+
+// const str: string = 'Forth'
+
+// console.log(str.indexOf('X'))
