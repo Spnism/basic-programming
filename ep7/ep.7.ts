@@ -95,3 +95,15 @@ console.log("เรียง A-Z:", friendsArray)
 friendsArray.reverse()//เรียงZ-A
 console.log("เรียงZ-A",friendsArray)
 
+
+
+const me ={
+    firstName: 'Sunisa',
+    lastName: 'Kaewchompoo',
+    age: 19
+}
+console.log(me)
+//ประวัติส่วนตัว
+//ชื่อ: Sunisa
+//นามสกุล : Kaewchompoo
+//อายุ : 19
