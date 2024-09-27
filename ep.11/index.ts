@@ -70,3 +70,38 @@ login('max@utk.ac.th','maxi@utk1234')
 
 ///atob=การเเปลงรหัส //////////////////////////////////
 ////encode=เข้ารหัส//// decode=ถอดรหัส////////////////////
+
+availability: function (){
+    return this.data.filter(function (element, index){
+
+    })
+}
+}
+console.log(products.availability())
+///////////////////////////////////////////
+availability: function (){
+    const availableProducts = []
+    for (let i = 0; i < this.data.length; i++){
+        if (this.data[i].availability === 'Y'){
+            availableProducts.push(this.data[i])
+        }
+    }
+    return availableProducts
+}
+}
+console.log(products.availability())
+////////////////////////////////////////
+SalePrice: function(){
+    return this.data.filter(function(element,index){
+        return element.availability === 'Y'
+    }).map(function(element, index) {
+        return ({
+            product_name: element.product_name,
+            sku: element.sku,
+            salePrice: Number(element.price) - element.discount
+        })
+    })
+}
+}
+console.log(products.availability())
+//////////////////////////////////////////
