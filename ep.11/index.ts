@@ -68,15 +68,15 @@ login('max@utk.ac.th','maxi@utk1234')
 //////////////เข้าสู่ระบบเเบบไม่มีelse////////////////////////
 ////////ตรวจสอบหลายขั้น////////////////////////////////
 
-///atob=การเเปลงรหัส //////////////////////////////////
-////encode=เข้ารหัส//// decode=ถอดรหัส////////////////////
-
+//atob=การเเปลงรหัส 
+//encode=เข้ารหัส
+// decode=ถอดรหัส//
 availability: function (){
     return this.data.filter(function (element, index){
 
     })
 }
-}
+
 console.log(products.availability())
 ///////////////////////////////////////////
 availability: function (){
@@ -88,7 +88,7 @@ availability: function (){
     }
     return availableProducts
 }
-}
+
 console.log(products.availability())
 ////////////////////////////////////////
 SalePrice: function(){
@@ -102,6 +102,24 @@ SalePrice: function(){
         })
     })
 }
-}
+
 console.log(products.availability())
 //////////////////////////////////////////
+SalePriceWhileLoop: function(){
+    const availableProducts = []
+    let i = 0 
+    while (i < this.data.length){
+        if (this.data[i].availability === 'Y'){
+            availableProducts.push(this.data[i])
+        }  
+        i++
+    } 
+    return availableProducts.map(function (element, index){
+        return ({
+            products_name: element.product_name,
+            sku: element.sku,
+            salePrice: Number(element.price) - element.discount
+        })
+    })
+},
+//////////////////////////////////////////////////
