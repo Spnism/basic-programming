@@ -10,7 +10,7 @@ function login(email:string,password: string){
         return element. email === email
     }) 
     if(user.length > 0){
-        if (atob(user[0].password)=== password){
+        if (user[0].password=== password){
             console.log('เข้าสู้ระบบเเล้ว')
         }else{
             console.log('รหัสผ่านไม่ถูกต้อง')
@@ -19,7 +19,54 @@ function login(email:string,password: string){
         console.log('ไม่มีผู้ใช้งานนี้ในระบบ')
     }
 }
+login('max@uyk.ac.th','max@utk1234')
+/////เข้าสู่ระบบที่มีจีเมลอยู่ในระบบอยู่เเล้ว////////
+////////////////////////////////////////
 
-login('maw@utk.ac.th','maxi@utk1234')
+function login(email:string,password: string){
+    const user = database.filter(function(element,index){
+        return element.email === email
+    }) 
+    if (email.includes("@") && email.lastIndexOf('@') !== email.length - 1) {
+        if (user.length > 0) {
+            if (atob(user[0].password) === password){
+                alert('เข้าสู้ระบบเเล้ว')
+            }else{
+                alert('รหัสผ่านไม่ถูกต้อง')
+            } 
+        } else {
+            alert('ไม่มีผู้ใช้งานในระบบ')
+        }
+    } else {
+        alert('Email ไม่ถูกต้อง')
+    }
+}
+//////////////อีกเเบบ//////////////////////////
 
-//เข้าสู่ระบบที่มีอีเมลล์
+function login(email:string,passwoed:string){
+    const user = database.filter(function(element,index){
+        return element.email === email
+    })
+if (!(email.includes("@") && email.lastIndexOf('@') !== email.length - 1)) {
+    alert('Mail ไมม่ถูกต้อง')
+    return
+}
+if (user.length === 0){
+    alert('ไม่มีผู้ใช้งานในระบบ')
+    return
+}
+if(!(atob(user[0].password) === passwoed)){
+    alert('รหัสผ่านไม่ถูกต้อง')
+    return
+}
+
+alert('เข้าสู่ระบบเเล้ว')
+
+}
+login('max@utk.ac.th','maxi@utk1234')
+
+//////////////เข้าสู่ระบบเเบบไม่มีelse////////////////////////
+////////ตรวจสอบหลายขั้น////////////////////////////////
+
+///atob=การเเปลงรหัส //////////////////////////////////
+////encode=เข้ารหัส//// decode=ถอดรหัส////////////////////
